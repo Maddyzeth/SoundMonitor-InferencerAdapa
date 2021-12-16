@@ -41,7 +41,7 @@ jobs:
           command: |
             cd IAC &&
             export IAC_VERSION=$(grep -ohE 'ref=(.*?)"' inferencer.tf | sed 's/ref=//' | sed 's/"//') &&
-            wget "https://raw.githubusercontent.com/AlienX456/SoundMonitor-IAC-Infrastructure-Common/${IAC_VERSION}/map/topic-index-mapping.json"
+            wget "https://raw.githubusercontent.com/Maddyzeth/SoundMonitor-IAC-Infrastructure-Common/${IAC_VERSION}/map/topic-index-mapping.json"
       - run:
           name: Terraform apply
           command: |
